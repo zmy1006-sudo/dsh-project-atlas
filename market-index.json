@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Project Atlas Market",
+    "zh": "项目档案插件源"
+  },
+  "description": {
+    "en": "A single-plugin index that distributes Project Atlas for DeepSeek Harness.",
+    "zh": "只分发「项目档案」一个插件的 DSH 插件市场索引。"
+  },
+  "metadata": {
+    "categories": {
+      "ui": {
+        "title": {
+          "en": "UI & panels",
+          "zh": "界面与面板"
+        }
+      }
+    },
+    "labels": {
+      "sidebar": {
+        "title": {
+          "en": "Sidebar",
+          "zh": "侧栏"
+        }
+      }
+    },
+    "sortKeys": {
+      "featured": {
+        "title": {
+          "en": "Featured",
+          "zh": "推荐度"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-project-atlas",
+      "title": {
+        "en": "Project Atlas",
+        "zh": "项目档案"
+      },
+      "description": {
+        "en": "A colorful tag wall of recent projects: numbered tags with type logos that unfold into date, summary, hours, cost and next steps on hover.",
+        "zh": "侧栏里的项目标签墙：每个项目是一枚带编号和类型图标的彩色标签，悬停展开时间、摘要、工时、费用与待完善事项。"
+      },
+      "icon": "./icon.svg",
+      "author": "mingyuan",
+      "homepage": "https://github.com/zmy1006-sudo/dsh-project-atlas#readme",
+      "repository": {
+        "url": "https://github.com/zmy1006-sudo/dsh-project-atlas"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "dsh-plugin",
+          "deepseek-harness",
+          "sidebar-panel",
+          "project-archive",
+          "portfolio"
+        ],
+        "labels": [
+          "sidebar"
+        ],
+        "sortKeys": {
+          "featured": 100
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793721600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/zmy1006-sudo/dsh-project-atlas.git",
+            "commit": "PLACEHOLDER_COMMIT"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}
