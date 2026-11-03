@@ -1,0 +1,77 @@
+{
+  "name": "dsh-project-atlas",
+  "version": "1.0.0",
+  "description": "A colorful tag wall of recent projects in the DeepSeek Harness sidebar: numbered tags with type logos that unfold into date, summary, hours, cost and next steps on hover.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "assets",
+    "screenshots.json",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "icon": "icon.svg",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "sidebar-panel",
+    "project-archive",
+    "portfolio",
+    "dashboard"
+  ],
+  "author": {
+    "name": "mingyuan",
+    "url": "https://github.com/zmy1006-sudo"
+  },
+  "homepage": "https://github.com/zmy1006-sudo/dsh-project-atlas#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmy1006-sudo/dsh-project-atlas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zmy1006-sudo/dsh-project-atlas/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "scripts": {
+    "check": "node --check client.js && node --check index.js"
+  }
+}
